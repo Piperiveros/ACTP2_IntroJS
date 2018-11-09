@@ -12,8 +12,46 @@ de un segundo, al volver hacer click debe volver a estar en blanco y negro.
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
   </head>
   <body>
+
+
+	<div class="gallery">
+	<img class="grayscale gallery-0" src="https://picsum.photos/400/400?image=0" alt="">
+	<img class="grayscale gallery-1" src="https://picsum.photos/400/400?image=1" alt="">
+	<img class="grayscale gallery-2" src="https://picsum.photos/400/400?image=2" alt="">
+	<img class="grayscale gallery-3" src="https://picsum.photos/400/400?image=3" alt="">
+	<img class="grayscale gallery-4" src="https://picsum.photos/400/400?image=4" alt="">
+	<img class="grayscale gallery-5" src="https://picsum.photos/400/400?image=5" alt="">
+    </div>
+
+    <script>
+    $(".gallery-0").on("click", function(){
+       $(".gallery-0").toggleClass('img-color')
+    })
+
+    $(".gallery-1").on("click", function(){
+       $(".gallery-1").toggleClass('img-color')
+    })
+
+    $(".gallery-2").on("click", function(){
+       $(".gallery-2").toggleClass('img-color')
+    })
+
+    $(".gallery-3").on("click", function(){
+       $(".gallery-3").toggleClass('img-color')
+    })
+
+    $(".gallery-4").on("click", function(){
+       $(".gallery-4").toggleClass('img-color')
+    })
+
+    $(".gallery-5").on("click", function(){
+       $(".gallery-5").toggleClass('img-color')
+    })
+    </script>
 
   </body>
 </html>
